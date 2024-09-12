@@ -4,5 +4,5 @@ Lab1
 3семестр
 https://i.redd.it/zad88tnebhk71.jp
 https://i.redd.it/zad88tnebhk71.jpg
-![Alt text](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScmkKKqs7sU8jPPU0b5ZqLjVQrx0Tf4hwNhQ&s "thom")
+![Текст описания](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScmkKKqs7sU8jPPU0b5ZqLjVQrx0Tf4hwNhQ&s "thom")
 
