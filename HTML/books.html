@@ -2,52 +2,155 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>Книги</title>
+        <title>Главная страница</title>
+        <link rel="stylesheet" href="styles.css"></linkrel>
     </head>
     <body>
-        <header align = "center">     
-            <h2><a href="index.html">Книжная полка</a></h2>
-            <nav align = "center">
-                <a href="books.html">книги</a> | 
-                <a href="lists.html">списки</a> | 
-                <a href="articles.html">статьи</a>
-            </nav> 
-            <h2>Книги</h2>
+        <header>
+            <h2><a href="index.html " class = "link">КНИЖНАЯ ПОЛКА</a></h2>
+            <nav>
+                <a class = "link" href="books.html">КНИГИ</a> | 
+                <a class = "link" href="lists.html">СПИСКИ</a> | 
+                <a class = "link" href="articles.html">СТАТЬИ</a>
+            </nav>  
         </header>
-        
-    <div align = "center">
-        <div>
-            <div>
-                <div>
-                    <div>
-                        <div>
-                        </div>
-                        <img src="./images/anna_karenina.jpg">
-                    </div>
-                </div>
-                <div><a href="books/1.html"><h5>Анна Каренина</h5></a>
-                    <div><h5 class=>Лев Толстой</h5><p>1877</p>                       
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <div>
-            <div>
-                <div>
-                    <div>
-                        <div>
-                        </div>
-                        <img src="./images/moskva_petushki.png">
-                    </div>
+        <main>
+            <div class="wrapper">
+                <div class="links">
+                    <ul>
+                        <li data-view="list-view" class="li-list active">
+                        <i class="fas fa-th-list"></i>
+                        Список</li>
+                        <li data-view="grid-view" class="li-grid">
+                        <i class="fas fa-th-large"></i>
+                        Сетка</li>
+                    </ul>
                 </div>
-                <div><a href="books/2.html"><h5>Москва Петушки</h5></a>
-                    <div><h5 class=>Венедикт Васильевич Ерофеев
-                    </h5><p>1973</p>                       
+                <div class="view_main">
+                    <div class="view_wrap list-view" style="display: block;">
+                        <div class="view_item">
+                            <div class="vi_left">
+                                <img src="./images/1_cover.jpg">
+                            </div>
+                            <div class="vi_right">
+                                <p class="title">Записки сумасшедшего</p>
+                                <p class="content">Николай гоголь, 1835</p>
+                            </div>
+                        </div>
+                        <div class="view_item">
+                            <div class="vi_left">
+                                <img src="./images/2_cover.jpg">
+                            </div>
+                            <div class="vi_right">
+                                <p class="title">Москва-Петушки</p>
+                                <p class="content">Венедикт Ерофеев, 1970</p>
+                            </div>
+                        </div>
+                        <div class="view_item">
+                            <div class="vi_left">
+                                <img src="./images/3_cover.jpg">
+                            </div>
+                            <div class="vi_right">
+                                <p class="title"><a class="link" href="books/1.html">Анна Каренина</a></p>
+                                <p class="content">Лев Толстой, 1877</p>
+                            </div>
+                        </div>
+                        <div class="view_item">
+                            <div class="vi_left">
+                                <img src="./images/1_cover.jpg">
+                            </div>
+                            <div class="vi_right">
+                                <p class="title">Записки сумасшедшего</p>
+                                <p class="content">Николай гоголь, 1835</p>
+                            </div>
+                        </div>
+                        <div class="view_item">
+                            <div class="vi_left">
+                                <img src="./images/2_cover.jpg">
+                            </div>
+                            <div class="vi_right">
+                                <p class="title">Москва-Петушки</p>
+                                <p class="content">Венедикт Ерофеев, 1970</p>
+                            </div>
+                        </div>
+                        <div class="view_item">
+                            <div class="vi_left">
+                                <img src="./images/3_cover.jpg">
+                            </div>
+                            <div class="vi_right">
+                                <p class="title">Анна Каренина</p>
+                                <p class="content">Лев Толстой, 1877</p>
+                            </div>
+                        </div>  
+            
+                    </div>
+                    <div class="view_wrap grid-view" style="display: none;">
+                        <div class="view_item">
+                            <div class="vi_left">
+                                <img src="./images/1_cover.jpg">
+                            </div>
+                            <div class="vi_right">
+                                <p class="title">Записки сумасшедшего</p>
+                                <p class="content">Николай гоголь, 1835</p>
+                            </div>
+                        </div>
+                        <div class="view_item">
+                            <div class="vi_left">
+                                <img src="./images/2_cover.jpg">
+                            </div>
+                            <div class="vi_right">
+                                <p class="title">Москва-Петушки</p>
+                                <p class="content">Венедикт Ерофеев, 1970</p>
+                            </div>
+                        </div>
+                        <div class="view_item">
+                            <div class="vi_left">
+                                <img src="./images/3_cover.jpg">
+                            </div>
+                            <div class="vi_right">
+                                <p class="title"><a class="link" books/1.html">Анна Каренина</a></p>
+                                <p class="content">Лев Толстой, 1877</p>
+                            </div>
+                        </div>
+                        <div class="view_item">
+                            <div class="vi_left">
+                                <img src="./images/1_cover.jpg">
+                            </div>
+                            <div class="vi_right">
+                                <p class="title">Записки сумасшедшего</p>
+                                <p class="content">Николай гоголь, 1835</p>
+                            </div>
+                        </div>
+                        <div class="view_item">
+                            <div class="vi_left">
+                                <img src="./images/2_cover.jpg">
+                            </div>
+                            <div class="vi_right">
+                                <p class="title">Москва-Петушки</p>
+                                <p class="content">Венедикт Ерофеев, 1970</p>
+                            </div>
+                        </div>
+                        <div class="view_item">
+                            <div class="vi_left">
+                                <img src="./images/3_cover.jpg">
+                            </div>
+                            <div class="vi_right">
+                                <p class="title">Анна Каренина</p>
+                                <p class="content">Лев Толстой, 1877</p>
+                            </div>
+                        </div>
+            
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+                
+            <script src="scripts.js"></script>
+        </main>
+
+        <footer>
+            <p>2024 Полка</p>
+        </footer>
+
     </body>
 </html>

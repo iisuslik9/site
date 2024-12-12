@@ -21,7 +21,7 @@ h1{
 main {
   /* padding: 20px; */
   background-color: rgb(245, 233, 220);
-  /* position: relative; */
+  position: relative;
 }
 .question-card {
   border: 1px solid #ccc;
@@ -139,10 +139,13 @@ header a:hover {
   background: none;
 }
 a {
-  color: #f0fce6;
+  color: #000000;
   outline: none;
   text-decoration: none;
   padding: 2px 1px 0;
+}
+.slide a{
+  color: #fff;
 }
 a:hover {
   color: #7c7c7c;
@@ -218,6 +221,15 @@ footer {
   padding: 10px;
   background-color: #fff1e1;
 }
+/* footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #fff1e1;
+  width:100%;
+   height:60px;
+  position:absolute;
+  bottom:0;
+} */
 
 .lists{
   padding:100px 15px;
@@ -287,6 +299,116 @@ footer {
   margin:0 0 10px;
 }
 
+
+
+
+
+
+
+.view_item img{
+	width: 75px;
+}
+
+.wrapper{
+	width: 800px;
+	margin: 0px auto;
+}
+
+.links{
+  background-color: rgb(245, 233, 220);
+	padding: 15px;
+}
+
+.links ul{
+	display: flex;
+	justify-content: center;
+}
+
+.links ul li{
+	margin: 0 15px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.links ul li:hover,
+.links ul li.active{
+	color: #530101;
+}
+
+.view_main{
+	background-color: rgb(245, 233, 220);
+	border-radius: 3px;
+	padding: 15px;
+}
+
+.view_main img{
+  border-radius: 20%;
+  padding: 10px;
+}
+.list-view .view_item {
+	background: #fff;
+	border: 1px solid #e2efe1;
+	margin: 10px;
+	padding: 10px 20px;
+	display: flex;
+	align-items: center;
+  cursor:pointer;
+  transition: 0.5s ease-in-out;
+}
+.list-view .view_item:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #4a012e;
+}
+
+.list-view .view_item:last-child{
+	margin-bottom: 0;
+}
+
+.list-view .view_item .vi_left{
+	margin-right: 25px;
+}
+
+.view_item .title{
+	font-weight: 600;
+}
+
+.view_item .content{
+	margin: 5px 0;
+	font-size: 14px;
+	line-height: 22px;
+	font-weight: 200;
+}
+
+
+
+.grid-view{
+	width: 100%;
+}
+
+.grid-view .view_item {
+  background-color: #ffffff;
+	display: inline-block;
+    border: 1px solid #e2efe1;
+    width: 230px;
+    text-align: center;
+    margin: 10px;
+    cursor:pointer;
+  transition: 0.5s ease-in-out;
+}
+.grid-view .view_item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #4a012e;
+}
+.grid-view .view_item .vi_left{
+	margin-bottom: 10px;
+}
+
+.grid-view .view_item .btn{
+	margin: 0 auto;
+}
 /* #header {
   width: 990.08;
     height: 250px;
