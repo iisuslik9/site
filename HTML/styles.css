@@ -409,6 +409,180 @@ footer {
 .grid-view .view_item .btn{
 	margin: 0 auto;
 }
+
+
+
+
+
+
+
+
+.wrap{
+	width: 1000px;
+	margin: 0px auto;
+  text-align: center;
+}
+.view{
+	background: #DCDCDC;
+	border-radius: 3px;
+	padding: 15px;
+}
+
+
+#columns {
+ 
+  column-width: 220px;
+  column-gap: 15px;
+  width: 90%;
+  max-width: 1100px;
+  margin: 30px auto;
+}
+
+div#columns figure {
+  background: #fefefe;
+  border: 2px solid #fcfcfc;
+  box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+  margin: 0 2px 15px;
+  padding: 15px;
+  padding-bottom: 10px;
+  transition: opacity .4s ease-in-out;
+display: inline-block;
+column-break-inside: avoid;
+}
+
+div#columns figure img {
+  width: 100%; height: auto;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 15px;
+  margin-bottom: 5px;
+}
+
+div#columns figure figcaption {
+font-size: .9rem;
+  color: #444;
+line-height: 1.5;
+}
+
+div#columns small { 
+font-size: 1rem;
+float: right; 
+text-transform: uppercase;
+color: #aaa;
+} 
+
+div#columns small a { 
+color: #666; 
+text-decoration: none; 
+transition: .4s color;
+}
+
+div#columns:hover figure:not(:hover) {
+  opacity: 0.4;
+}
+
+/* кнопки на странице с работами */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+   color: white;
+}
+/*Фильтратор в галерее*/
+
+* {
+    box-sizing: border-box;
+}
+
+.row {
+    margin: 10px -16px;
+}
+
+.column {
+    display: none; 
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.show {
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import "susy";
+@import "compass/css3";
+
+//Google web fonts
+@import url(https://fonts.googleapis.com/css?family=Merriweather);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+#open_sans {
+	font-family: 'Open Sans';
+  /* font-weight: 700; */
+}
+#merriweather {
+  font-family: 'Merriweather', serif;
+}
+
+$susy: (
+  flow: ltr, // ltr | rtl
+  output: float, // float | isolate
+  math: fluid, // fluid | static (requires column-width)
+  container: auto, // length or % | auto
+  container-position: center, // left | center | right | <length> [*2] (grid padding)
+  last-flow: to,
+  columns: 24,
+  gutters: 0,
+  gutter-position: inside, // before | after | split | inside | inside-static (requires column-width)
+  global-box-sizing: border-box, // content-box | border-box (affects inside/inside-static)
+  use-custom: (
+    box-sizing: true,
+    clearfix: true,
+    rem: true,
+  )
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* #header {
   width: 990.08;
     height: 250px;
@@ -446,11 +620,7 @@ footer {
   display: inline-block;
   
 }
-#contentglav {
-    background: #DCDCDC;
-    width: 990.08;
-  display: inline-block;	 
-}
+
 
 #clear {
     clear: both;
