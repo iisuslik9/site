@@ -37,7 +37,6 @@ main {
 }
 
 .slider {
-  
   width: 100%;
   height: 100vh;
   display: flex;
@@ -524,48 +523,6 @@ div#columns:hover figure:not(:hover) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-@import "susy";
-@import "compass/css3";
-
-//Google web fonts
-@import url(https://fonts.googleapis.com/css?family=Merriweather);
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
-
-#open_sans {
-	font-family: 'Open Sans';
-  /* font-weight: 700; */
-}
-#merriweather {
-  font-family: 'Merriweather', serif;
-}
-
-$susy: (
-  flow: ltr, // ltr | rtl
-  output: float, // float | isolate
-  math: fluid, // fluid | static (requires column-width)
-  container: auto, // length or % | auto
-  container-position: center, // left | center | right | <length> [*2] (grid padding)
-  last-flow: to,
-  columns: 24,
-  gutters: 0,
-  gutter-position: inside, // before | after | split | inside | inside-static (requires column-width)
-  global-box-sizing: border-box, // content-box | border-box (affects inside/inside-static)
-  use-custom: (
-    box-sizing: true,
-    clearfix: true,
-    rem: true,
-  )
-);
 
 
 
